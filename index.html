@@ -4,20 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sonus Dens</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Willkommen bei Sonus Dens</h1>
-    <div>
-        <video width="600" controls poster="cover.jpg">
-            <source src="video.mp4" type="video/mp4">
-            Ihr Browser unterstützt das Video-Tag nicht.
-        </video>
-    </div>
-    <div>
-        <button onclick="window.open('https://www.youtube.com/watch?v=example', '_blank')">Video auf YouTube öffnen</button>
-        <button onclick="window.location.href='video.mp4'">Video herunterladen</button>
-        <button onclick="window.location.href='musescore.mscz'">MuseScore herunterladen</button>
-        <button onclick="window.location.href='sheetmusic.pdf'">PDF herunterladen</button>
-    </div>
+    <header>
+        <h1>Sonus Dens - Opus Dens Cover</h1>
+    </header>
+
+    <main>
+        <div id="nav-container">
+            <img id="cover" src="/media/sonus dens_titel.png" alt="Cover">
+            
+            <button onclick="window.open('https://youtu.be/xCEug-dOc_E', '_blank')">Video auf YouTube öffnen</button>
+            <a href="/media/sonus dens.mp4" download><button>Video herunterladen</button></a>
+            <a href="/media/Sonus Dens.mscz" download><button>MuseScore herunterladen</button></a>
+            <a href="/media/Sonus Dens - Partitur & Auszüge.pdf" download><button>PDF herunterladen</button></a>
+        </div>
+
+        <div id="video-container">
+            <video controls>
+                <source src="media/sonus dens.mp4" type="video/mp4">
+                Ihr Browser unterstützt das Video-Tag nicht.
+            </video>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Sonus Dens. Alle Rechte den Künstler vorbehalten.</p>
+    </footer>
 </body>
 </html>
